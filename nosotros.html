@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSE Oversize - Sobre Nosotros</title>
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <!-- Tus estilos personalizados -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="black">
+
+    <!-- ================= BARRA DE NAVEGACIÓN ================= -->
+    <nav class="red darken-4">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <img src="IMG/apex line.jpeg" alt="Logo Apex Line">
+            </a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">inicio</a></li>
+                <li class="active"><a href="nosotros.html">sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="registro.html">registro</a></li>
+                <li><a href="contacto.html">contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================= MENÚ LATERAL (SIDENAV) ================= -->
+    <ul id="slide-out" class="sidenav grey darken-4">
+        <li>
+            <div class="user-view">
+                <div class="background red darken-4"></div>
+                <a href="#user"><img class="circle" src="IMG/apex line.jpeg" alt="Logo"></a>
+                <a href="#name"><span class="white-text name">JSE Oversize</span></a>
+                <a href="#email"><span class="white-text email">contacto@jseoversize.com</span></a>
+            </div>
+        </li>
+        <li><a href="index.html" class="white-text"><i class="material-icons red-text">home</i>inicio</a></li>
+        <li><a href="nosotros.html" class="white-text"><i class="material-icons red-text">group</i>sobre nosotros</a></li>
+        <li><a href="productos.html" class="white-text"><i class="material-icons red-text">store</i>Productos</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader white-text">Cuenta y Contacto</a></li>
+        <li><a class="waves-effect white-text" href="registro.html"><i class="material-icons red-text">person_add</i>registro</a></li>
+        <li><a class="waves-effect white-text" href="contacto.html"><i class="material-icons red-text">mail</i>contactanos</a></li>
+    </ul>
+
+    <!-- ================= SECCIÓN SOBRE NOSOTROS / HERO ================= -->
+    <header class="hero-section">
+        <div class="container center-align">
+            <h1 class="hero-title">Sobre Nosotros</h1>
+            <p class="hero-subtitle">Conoce la historia, el motor y los ideales que impulsan a Apex & Line a llevar la velocidad y la moda urbana al siguiente nivel.</p>
+        </div>
+    </header>
+
+    <!-- ================= CONTENIDO DE MISIÓN Y VISIÓN ================= -->
+    <main class="container seccion-nosotros">
+        
+        <!-- Bloque de Misión -->
+        <div class="row row-nosotros valign-wrapper">
+            <div class="col s12 m6">
+                <div class="card-panel grey darken-4 white-text tarjeta-nosotros">
+                    <h2 class="titulo-seccion-nosotros red-text text-darken-2">Misión</h2>
+                    <p class="texto-nosotros">
+                        Brindar a los fanáticos de la Fórmula 1 productos de alta calidad que les permitan vivir su pasión al máximo, ofreciendo artículos oficiales, originales y a la vanguardia, con un servicio confiable, rápido y personalizado[cite: 10].
+                    </p>
+                    <p class="texto-nosotros-extra">
+                        Nos esforzamos cada día por seleccionar los mejores materiales y diseños en corte oversize, asegurando que cada prenda refleje la adrenalina, el dinamismo y la exigencia del automovilismo de máxima categoría en el día a día de nuestra comunidad.
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 m6 center-align">
+                <div class="imagen-contenedor-nosotros">
+                    <img src="Imagenes/Imagen_Mision.png" alt="Misión Apex & Line" class="responsive-img materialboxed rounded-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- Bloque de Visión -->
+        <div class="row row-nosotros valign-wrapper flex-row-reverse">
+            <div class="col s12 m6">
+                <div class="card-panel grey darken-4 white-text tarjeta-nosotros">
+                    <h2 class="titulo-seccion-nosotros red-text text-darken-2">Visión</h2>
+                    <p class="texto-nosotros">
+                        Ser la tienda líder en artículos de Fórmula 1 en el país, reconocida por nuestra pasión, variedad, autenticidad y por conectar a cada aficionado con la emoción de la F1, hoy y siempre[cite: 9].
+                    </p>
+                    <p class="texto-nosotros-extra">
+                        Aspiramos a expandir nuestra presencia a nivel nacional e internacional, consolidándonos como el referente indiscutible de la moda urbana inspirada en el deporte motor, innovando constantemente en nuestras colecciones y experiencias de compra.
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 m6 center-align">
+                <div class="imagen-contenedor-nosotros">
+                    <img src="Imagenes/Imagen_Vision.png" alt="Visión Apex & Line" class="responsive-img materialboxed rounded-image">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- JavaScript al final del body -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var sidenavs = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenavs);
+            
+            // Inicializar efecto de ampliar imágenes si se usa materialboxed
+            var materialboxes = document.querySelectorAll('.materialboxed');
+            M.Materialbox.init(materialboxes);
+        });
+    </script>
+</body>
+</html>
