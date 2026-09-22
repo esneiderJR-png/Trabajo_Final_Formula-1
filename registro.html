@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Line - Registro</title>
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <!-- Tus estilos CSS independientes -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="contacto-body">
+
+    <!-- ================= BARRA DE NAVEGACIÓN ================= -->
+    <nav class="red darken-4">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+                <img src="IMG/apex line.jpeg" alt="Logo Apex Line">
+            </a>
+
+            <!-- Botón activador del menú lateral (Hamburguesa) - Solo visible en celulares y tablets -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+
+            <!-- Menú de escritorio - Visible solo en PC -->
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="nosotros.html">sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li class="active"><a href="registro.html">registro</a></li>
+                <li><a href="contacto.html">contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================= MENÚ LATERAL (SIDENAV) ================= -->
+    <ul id="slide-out" class="sidenav grey darken-4">
+        <li>
+            <div class="user-view">
+                <div class="background red darken-4"></div>
+                <a href="#user"><img class="circle" src="IMG/apex line.jpeg" alt="Logo"></a>
+                <a href="#name"><span class="white-text name" style="font-weight: bold;">JSE Oversize</span></a>
+                <a href="#email"><span class="white-text email">contacto@jseoversize.com</span></a>
+            </div>
+        </li>
+        <li><a href="index.html" class="white-text"><i class="material-icons red-text">home</i>inicio</a></li>
+        <li><a href="nosotros.html" class="white-text"><i class="material-icons red-text">group</i>sobre nosotros</a></li>
+        <li><a href="productos.html" class="white-text"><i class="material-icons red-text">store</i>Productos</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader white-text">Cuenta y Contacto</a></li>
+        <li><a class="waves-effect white-text" href="registro.html"><i class="material-icons red-text">person_add</i>registro</a></li>
+        <li><a class="waves-effect white-text" href="contacto.html"><i class="material-icons red-text">mail</i>contactanos</a></li>
+    </ul>
+
+    <!-- ================= SECCIÓN DE REGISTRO ================= -->
+    <div class="container contacto-container">
+        <h3 class="center-align contacto-titulo">Registro de Usuario</h3>
+        <p class="center-align contacto-subtitulo">Completa los datos para unirte a la comunidad de Apex Line (F1).</p>
+
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <div class="card-panel tarjeta-contacto">
+                    <form action="#" method="POST">
+                        
+                        <!-- 1. Nombre completo -->
+                        <div class="input-field">
+                            <i class="material-icons prefix icono-rojo">person</i>
+                            <input id="nombre" type="text" class="validate input-custom" required>
+                            <label for="nombre" class="label-custom">Nombre completo</label>
+                        </div>
+
+                        <!-- 2. Documento de identificación -->
+                        <div class="input-field">
+                            <i class="material-icons prefix icono-rojo">badge</i>
+                            <input id="documento" type="number" class="validate input-custom" required>
+                            <label for="documento" class="label-custom">Documento de identificación</label>
+                        </div>
+
+                        <!-- 3. Fecha de nacimiento -->
+                        <div class="input-field">
+                            <i class="material-icons prefix icono-rojo">cake</i>
+                            <input id="fecha_nacimiento" type="date" class="validate input-custom" required>
+                            <label for="fecha_nacimiento" class="active label-custom">Fecha de nacimiento</label>
+                        </div>
+
+                        <!-- 4. Correo electrónico -->
+                        <div class="input-field">
+                            <i class="material-icons prefix icono-rojo">email</i>
+                            <input id="correo" type="email" class="validate input-custom" required>
+                            <label for="correo" class="label-custom">Correo electrónico</label>
+                        </div>
+
+                        <!-- 5. Usuario -->
+                        <div class="input-field">
+                            <i class="material-icons prefix icono-rojo">account_circle</i>
+                            <input id="usuario" type="text" class="validate input-custom" required>
+                            <label for="usuario" class="label-custom">Nombre de usuario</label>
+                        </div>
+
+                        <!-- 6. Contraseña -->
+                        <div class="input-field">
+                            <i class="material-icons prefix icono-rojo">lock</i>
+                            <input id="password" type="password" class="validate input-custom" required>
+                            <label for="password" class="label-custom">Contraseña</label>
+                        </div>
+
+                        <!-- 7. Confirmación de contraseña -->
+                        <div class="input-field">
+                            <i class="material-icons prefix icono-rojo">lock_outline</i>
+                            <input id="confirm_password" type="password" class="validate input-custom" required>
+                            <label for="confirm_password" class="label-custom">Confirmar contraseña</label>
+                        </div>
+
+                        <!-- Botón de Registro -->
+                        <div class="center-align boton-contenedor">
+                            <button type="submit" class="waves-effect waves-light btn red darken-4 btn-enviar">
+                                <i class="material-icons right">person_add</i> Registrarse
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript de Materialize -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar el menú lateral (Sidenav)
+            var sidenavs = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenavs);
+        });
+    </script>
+</body>
+</html>

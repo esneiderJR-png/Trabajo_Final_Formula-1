@@ -1,0 +1,208 @@
+nav ul li a {
+    font-size: 18px;
+    margin-left: 80px;
+    margin-right: 80px;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+/* Estilo y alineación del logo en la barra de navegación */
+nav .brand-logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+}
+
+nav .brand-logo img,
+nav img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    vertical-align: middle;
+    border: 2px solid rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav .brand-logo:hover img,
+nav img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.55);
+}
+
+@media only screen and (max-width: 992px) {
+    nav .brand-logo {
+        margin-left: 0;
+    }
+}
+
+/* --- ESTILO PARA TARJETAS ROJAS COMPLETAS --- */
+
+/* Contenedor principal de las tarjetas para darles espacio y alineación */
+.row .col {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo de la tarjeta: Fondo Rojo, Borde Rojo, Texto Blanco */
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #ff1801; 
+    border: 2px solid #ff1801; 
+    box-shadow: 0 4px 15px rgba(255, 24, 1, 0.3); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(255, 24, 1, 0.5);
+}
+
+/* --- SOLUCIÓN DE POSICIONAMIENTO SIN CAMBIAR HTML --- */
+
+/* Transformamos el contenedor de la imagen a flexbox */
+.card .card-image {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Ajuste de la imagen limpia en la parte superior */
+.card .card-image img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Anulamos la posición absoluta del título y lo bajamos a la zona roja */
+.card .card-image .card-title {
+    position: static !important; 
+    background: transparent !important; 
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 1.35rem;
+    padding: 20px 20px 5px 20px !important;
+    text-shadow: none !important;
+    line-height: normal;
+    display: block;
+    width: 100%;
+}
+
+/* ESTILOS DE TEXTO DENTRO DE LA TARJETA ROJA */
+
+.card .card-content {
+    flex-grow: 1;
+    color: #ffffff;
+    padding: 0 20px 20px 20px; 
+}
+
+.card .card-content p {
+    color: #ffffff;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Zona de acciones (Botón "Ver más") */
+.card .card-action {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 15px 20px;
+}
+
+.card .card-action a {
+    color: #ffffff !important; 
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+.card .card-action a:hover {
+    color: #ffeeee !important; 
+}
+
+/* ================= ESTILOS PARA LA SECCIÓN DE CONTACTO ================= */
+.contacto-body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.contacto-container {
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.contacto-titulo {
+    color: #ff1801;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contacto-subtitulo {
+    color: #bbbbbb;
+    margin-bottom: 40px;
+}
+
+.tarjeta-contacto {
+    background-color: #1a1a1a !important;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(255, 24, 1, 0.15);
+}
+
+.icono-rojo {
+    color: #ff1801 !important;
+}
+
+/* Forzar que el texto y los bordes de los inputs combinen con el fondo oscuro */
+.input-custom {
+    color: #ffffff !important;
+    border-bottom: 1px solid #555555 !important;
+}
+
+.input-custom:focus {
+    border-bottom: 1px solid #ff1801 !important;
+    box-shadow: 0 1px 0 0 #ff1801 !important;
+}
+
+.label-custom {
+    color: #aaaaaa !important;
+}
+
+/* Color del label cuando el input está activo o enfocado */
+.input-field input.input-custom:focus + label,
+.input-field textarea.input-custom:focus + label {
+    color: #ff1801 !important;
+}
+
+.boton-contenedor {
+    margin-top: 30px;
+}
+
+.btn-enviar {
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+/* ================= ESTILO PARA EL MENÚ HAMBURGUESA ================= */
+.sidenav-trigger {
+    color: #ffffff !important;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.sidenav-trigger i {
+    font-size: 30px; /* Tamaño ideal para que sea fácil de presionar en celulares */
+    line-height: 64px; /* Centra el ícono verticalmente en la barra */
+}
+

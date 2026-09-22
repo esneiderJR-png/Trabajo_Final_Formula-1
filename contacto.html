@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Line - Contáctanos</title>
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import materialize.css -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <!-- Tus estilos CSS independientes -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="contacto-body">
+
+    <!-- ================= BARRA DE NAVEGACIÓN ================= -->
+    <nav class="red darken-4">
+        <div class="nav-wrapper">
+            <!-- Al ponerle "#", el enlace ya no busca ningún archivo y no hace nada al tocarlo -->
+            <a href="#" class="brand-logo">
+                <img src="IMG/apex line.jpeg" alt="Logo Apex Line">
+            </a>
+
+            <!-- Botón de las tres rayitas (Solo se muestra en celulares/tablets y se oculta en PC) -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+            
+            <!-- Menú de escritorio (Se oculta en celulares y aparece en pantallas grandes) -->
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="nosotros.html">sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="registro.html">registro</a></li>
+                <li><a href="contacto.html">contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================= MENÚ LATERAL (SIDENAV) ================= -->
+    <ul id="slide-out" class="sidenav grey darken-4">
+        <li>
+            <div class="user-view">
+                <div class="background red darken-4"></div>
+                <a href="#user"><img class="circle" src="IMG/apex line.jpeg" alt="Logo"></a>
+                <a href="#name"><span class="white-text name" style="font-weight: bold;">JSE Oversize</span></a>
+                <a href="#email"><span class="white-text email">contacto@jseoversize.com</span></a>
+            </div>
+        </li>
+        <li><a href="index.html" class="white-text"><i class="material-icons red-text">home</i>inicio</a></li>
+        <li><a href="nosotros.html" class="white-text"><i class="material-icons red-text">group</i>sobre nosotros</a></li>
+        <li><a href="productos.html" class="white-text"><i class="material-icons red-text">store</i>Productos</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader white-text">Cuenta y Contacto</a></li>
+        <li><a class="waves-effect white-text" href="registro.html"><i class="material-icons red-text">person_add</i>registro</a></li>
+        <li><a class="waves-effect white-text" href="contacto.html"><i class="material-icons red-text">mail</i>contactanos</a></li>
+    </ul>
+
+    <!-- ================= SECCIÓN DE CONTACTO ================= -->
+    <div class="container contacto-container">
+        <h3 class="center-align contacto-titulo">Contáctanos</h3>
+        <p class="center-align contacto-subtitulo">¿Tienes dudas sobre nuestros productos o envíos de F1? Escríbenos y te responderemos pronto.</p>
+
+        <div class="row">
+            <div class="col s12 m8 offset-m2">
+                <div class="card-panel tarjeta-contacto">
+                    <form action="#" method="POST">
+                        
+                        <!-- Campo: Nombre completo -->
+                        <div class="input-field">
+                            <i class="material-icons prefix icono-rojo">person</i>
+                            <input id="nombre" type="text" class="validate input-custom" required>
+                            <label for="nombre" class="label-custom">Nombre completo</label>
+                        </div>
+
+                        <!-- Campo: Correo electrónico -->
+                        <div class="input-field">
+                            <i class="material-icons prefix icono-rojo">email</i>
+                            <input id="correo" type="email" class="validate input-custom" required>
+                            <label for="correo" class="label-custom">Correo electrónico</label>
+                        </div>
+
+                        <!-- Campo: Teléfono -->
+                        <div class="input-field">
+                            <i class="material-icons prefix icono-rojo">phone</i>
+                            <input id="telefono" type="tel" class="validate input-custom" required>
+                            <label for="telefono" class="label-custom">Teléfono / Celular</label>
+                        </div>
+
+                        <!-- Campo: Mensaje -->
+                        <div class="input-field">
+                            <i class="material-icons prefix icono-rojo">message</i>
+                            <textarea id="mensaje" class="materialize-textarea input-custom" required></textarea>
+                            <label for="mensaje" class="label-custom">Escribe tu mensaje...</label>
+                        </div>
+
+                        <!-- Botón de Enviar -->
+                        <div class="center-align boton-contenedor">
+                            <button type="submit" class="waves-effect waves-light btn red darken-4 btn-enviar">
+                                <i class="material-icons right">send</i> Enviar Mensaje
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript de Materialize -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar el menú lateral (Sidenav)
+            var sidenavs = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenavs);
+
+            // Inicializar el auto-ajuste de los textareas
+            var textareas = document.querySelectorAll('textarea');
+            M.textareaAutoResize(textareas);
+        });
+    </script>
+</body>
+</html>

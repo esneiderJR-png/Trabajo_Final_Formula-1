@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Import Google Icon Font -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Import materialize.css -->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+        <link rel="stylesheet" href="css/estilos.css">
+
+        <!-- Let browser know website is optimized for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Apex Line - F1</title>
+    </head>
+
+<body class="black">
+
+    <!-- ================= BARRA DE NAVEGACIÓN ================= -->
+    <nav class="red darken-4">
+        <div class="nav-wrapper">
+            <!-- Al ponerle "#", el enlace ya no busca ningún archivo y no hace nada al tocarlo -->
+            <a href="#" class="brand-logo">
+                <img src="IMG/apex line.jpeg" alt="Logo Apex Line">
+            </a>
+
+            <!-- Botón de las tres rayitas (Solo se muestra en celulares/tablets y se oculta en PC) -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+            
+            <!-- Menú de escritorio (Se oculta en celulares y aparece en pantallas grandes) -->
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="nosotros.html">sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="registro.html">registro</a></li>
+                <li><a href="contacto.html">contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================= MENÚ LATERAL (SIDENAV) ================= -->
+    <ul id="slide-out" class="sidenav grey darken-4">
+        <li>
+            <div class="user-view">
+                <div class="background red darken-4"></div>
+                <a href="#user"><img class="circle" src="IMG/apex line.jpeg" alt="Logo"></a>
+                <a href="#name"><span class="white-text name" style="font-weight: bold;">JSE Oversize</span></a>
+                <a href="#email"><span class="white-text email">contacto@jseoversize.com</span></a>
+            </div>
+        </li>
+        <li><a href="index.html" class="white-text"><i class="material-icons red-text">home</i>inicio</a></li>
+        <li><a href="nosotros.html" class="white-text"><i class="material-icons red-text">group</i>sobre nosotros</a></li>
+        <li><a href="productos.html" class="white-text"><i class="material-icons red-text">store</i>Productos</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader white-text">Cuenta y Contacto</a></li>
+        <li><a class="waves-effect white-text" href="registro.html"><i class="material-icons red-text">person_add</i>registro</a></li>
+        <li><a class="waves-effect white-text" href="contacto.html"><i class="material-icons red-text">mail</i>contactanos</a></li>
+    </ul>
+
+    <!-- ================= SECCIÓN: CAMISETAS F1 ================= -->
+    <div class="container">
+        <h3 class="center-align" style="color: #ff1801; font-weight: bold; margin-bottom: 40px;">Camisetas F1</h3>
+        
+        <!-- Fila 1 -->
+        <div class="row">
+            <!-- Tarjeta 1: Ferrari Roja -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/Camiseta formula 1 ferrari roja.jpg" alt="Camiseta Ferrari Roja">
+                        <span class="card-title">Ferrari Racing</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Camiseta oficial de la escudería Ferrari con detalles combinados en rojo y negro.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-ferrari-roja" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: McLaren Negra -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/camiseta formula 1 mclaren negra.webp" alt="Camiseta McLaren Negra">
+                        <span class="card-title">McLaren Black</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Diseño exclusivo de McLaren en color negro con el logotipo clásico del equipo.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-mclaren-negra" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: McLaren Edición Especial -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/camiseta formula 1 mclaren.avif" alt="Camiseta McLaren Edición Especial">
+                        <span class="card-title">McLaren Special</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Edición conmemorativa de McLaren con patrones modernos y dinámicos en naranja.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-mclaren-special" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4: Mercedes Negra APXGP -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/camiseta formula 1 mercedes negra 2.webp" alt="Camiseta Mercedes APXGP">
+                        <span class="card-title">Mercedes APXGP</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Estilo exclusivo de Mercedes-AMG con tipografías y patrocinios icónicos de alta gama.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-mercedes-apxgp" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="row">
+            <!-- Tarjeta 5: Mercedes Petronas -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/Camiseta formula 1 mercedes negra.webp" alt="Camiseta Mercedes Petronas">
+                        <span class="card-title">Mercedes Petronas</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Camiseta oficial de Mercedes Petronas en color negro conmemorativa de campeonatos.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-mercedes-petronas" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 6: Mercedes Blanca -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/Camiseta formula 1 mercedes.webp" alt="Camiseta Mercedes White">
+                        <span class="card-title">Mercedes White</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Versión en color blanco de la escudería Mercedes-AMG con detalles contrastantes.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-mercedes-white" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 7: Red Bull Racing -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/camiseta formula 1 red bull 2.jpg" alt="Camiseta Red Bull 2">
+                        <span class="card-title">Red Bull Racing</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Diseño aerodinámico y moderno de Oracle Red Bull Racing con múltiples patrocinios.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-redbull-2" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 8: Red Bull Classic -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/Camiseta formula 1 red bull.jpg" alt="Camiseta Red Bull Clásica">
+                        <span class="card-title">Red Bull Classic</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Clásica camiseta azul marino y roja de Red Bull con el toro energético en el hombro.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-redbull-classic" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila 3 (Hamilton y Hoodie) -->
+        <div class="row">
+            <!-- Tarjeta 9: Ferrari Hamilton -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/camiseta formula ferrari.webp" alt="Camiseta Ferrari F1 Hamilton">
+                        <span class="card-title">Ferrari Hamilton</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Camiseta oficial edición especial con detalles de patrocinadores y dorsal 44.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-ferrari-hamilton" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 10: Hoodie Ferrari -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/buzo hoddie formula 1 ferrari.jpg" alt="Buzo Hoodie Ferrari">
+                        <span class="card-title">Hoodie Ferrari</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Buzo con capucha y cremallera, estilo deportivo con los colores clásicos de Ferrari.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-hoodie-ferrari" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================= SECCIÓN: CHAQUETAS F1 ================= -->
+    <div class="container" style="margin-top: 60px;">
+        <h3 class="center-align" style="color: #ff1801; font-weight: bold; margin-bottom: 40px;">Chaquetas F1</h3>
+        
+        <div class="row">
+            <!-- Tarjeta 1: Chaqueta Ferrari -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/chaqueta formula 1 ferrari.webp" alt="Chaqueta Ferrari F1">
+                        <span class="card-title">Chaqueta Cuero Ferrari</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Chaqueta estilo clásico en combinación blanco y negro con insignias bordadas.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-chaqueta-ferrari" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Chaqueta Red Bull -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/chaqueta formula 1 red bull.webp" alt="Chaqueta Red Bull Racing">
+                        <span class="card-title">Chaqueta Red Bull</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Chaqueta técnica oficial con parches de patrocinadores de la escudería.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-chaqueta-redbull" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3: Rompevientos Red Bull -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/chaqueta red bull aestetick.jpeg" alt="Rompevientos Red Bull Aesthetic">
+                        <span class="card-title">Rompevientos Red Bull</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Estilo minimalista y moderno "aesthetic" en color negro con capucha.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-rompevientos-redbull" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================= SECCIÓN: CASCOS F1 ================= -->
+    <div class="container" style="margin-top: 60px;">
+        <h3 class="center-align" style="color: #ff1801; font-weight: bold; margin-bottom: 40px;">Cascos F1</h3>
+        
+        <div class="row">
+            <!-- Tarjeta 1: Casco McLaren -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/casco f1 mclaren.jpg" alt="Casco F1 McLaren">
+                        <span class="card-title">Casco McLaren F1</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Réplica a escala de alta calidad con acabados detallados y visera oscura.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-casco-mclaren" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Casco Mercedes -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/casco f1 mercedes.avif" alt="Casco F1 Mercedes">
+                        <span class="card-title">Casco Mercedes AMG</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Diseño aerodinámico característico del equipo Mercedes Petronas F1.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-casco-mercedes" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================= SECCIÓN: ACCESORIOS F1 ================= -->
+    <div class="container" style="margin-top: 60px; margin-bottom: 60px;">
+        <h3 class="center-align" style="color: #ff1801; font-weight: bold; margin-bottom: 40px;">Accesorios F1</h3>
+        
+        <div class="row">
+            <!-- Tarjeta 1: Termo Ferrari -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/tarro f1.avif" alt="Termo Ferrari F1">
+                        <span class="card-title">Termo Scuderia Ferrari</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Botella térmica deportiva en color rojo icónico con el escudo oficial.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-termo-ferrari" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2: Taza F1 -->
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="IMG/vaso f1.avif" alt="Taza F1">
+                        <span class="card-title">Taza Oficial F1</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Taza de cerámica negra brillante con el logotipo clásico de la Fórmula 1.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal-taza-f1" class="modal-trigger">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================= VENTANAS MODALES PARA CADA PRODUCTO ================= -->
+    <!-- (Tus modales se mantienen exactamente igual abajo) -->
+
+    <!-- Modal 1: Ferrari Roja -->
+    <div id="modal-ferrari-roja" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Ferrari Racing</h4>
+            <img src="IMG/Camiseta formula 1 ferrari roja.jpg" alt="Ferrari Roja" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Camiseta oficial de la escudería Ferrari con detalles combinados en rojo y negro.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $85.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 2: McLaren Negra -->
+    <div id="modal-mclaren-negra" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>McLaren Black</h4>
+            <img src="IMG/camiseta formula 1 mclaren negra.webp" alt="McLaren Negra" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Diseño exclusivo de McLaren en color negro con el logotipo clásico del equipo.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $85.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 3: McLaren Special -->
+    <div id="modal-mclaren-special" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>McLaren Special</h4>
+            <img src="IMG/camiseta formula 1 mclaren.avif" alt="McLaren Special" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Edición conmemorativa de McLaren con patrones modernos y dinámicos en naranja.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $90.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 4: Mercedes APXGP -->
+    <div id="modal-mercedes-apxgp" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Mercedes APXGP</h4>
+            <img src="IMG/camiseta formula 1 mercedes negra 2.webp" alt="Mercedes APXGP" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Estilo exclusivo de Mercedes-AMG con tipografías y patrocinios icónicos de alta gama.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $85.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 5: Mercedes Petronas -->
+    <div id="modal-mercedes-petronas" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Mercedes Petronas</h4>
+            <img src="IMG/Camiseta formula 1 mercedes negra.webp" alt="Mercedes Petronas" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Camiseta oficial de Mercedes Petronas en color negro conmemorativa de campeonatos.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $85.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 6: Mercedes White -->
+    <div id="modal-mercedes-white" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Mercedes White</h4>
+            <img src="IMG/Camiseta formula 1 mercedes.webp" alt="Mercedes White" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Versión en color blanco de la escudería Mercedes-AMG con detalles contrastantes.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $85.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 7: Red Bull Racing 2 -->
+    <div id="modal-redbull-2" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Red Bull Racing</h4>
+            <img src="IMG/camiseta formula 1 red bull 2.jpg" alt="Red Bull Racing" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Diseño aerodinámico y moderno de Oracle Red Bull Racing con múltiples patrocinios.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $85.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 8: Red Bull Classic -->
+    <div id="modal-redbull-classic" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Red Bull Classic</h4>
+            <img src="IMG/Camiseta formula 1 red bull.jpg" alt="Red Bull Classic" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Clásica camiseta azul marino y roja de Red Bull con el toro energético en el hombro.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $80.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 9: Ferrari Hamilton -->
+    <div id="modal-ferrari-hamilton" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Ferrari Hamilton</h4>
+            <img src="IMG/camiseta formula ferrari.webp" alt="Ferrari Hamilton" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Camiseta oficial edición especial con detalles de patrocinadores y dorsal 44.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $95.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 10: Hoodie Ferrari -->
+    <div id="modal-hoodie-ferrari" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Hoodie Ferrari</h4>
+            <img src="IMG/buzo hoddie formula 1 ferrari.jpg" alt="Hoodie Ferrari" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Buzo con capucha y cremallera, estilo deportivo con los colores clásicos de Ferrari.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $130.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 11: Chaqueta Cuero Ferrari -->
+    <div id="modal-chaqueta-ferrari" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Chaqueta Cuero Ferrari</h4>
+            <img src="IMG/chaqueta formula 1 ferrari.webp" alt="Chaqueta Ferrari" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Chaqueta estilo clásico en combinación blanco y negro con insignias bordadas.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $160.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 12: Chaqueta Red Bull -->
+    <div id="modal-chaqueta-redbull" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Chaqueta Red Bull</h4>
+            <img src="IMG/chaqueta formula 1 red bull.webp" alt="Chaqueta Red Bull" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Chaqueta técnica oficial con parches de patrocinadores de la escudería.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $155.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 13: Rompevientos Red Bull -->
+    <div id="modal-rompevientos-redbull" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Rompevientos Red Bull</h4>
+            <img src="IMG/chaqueta red bull aestetick.jpeg" alt="Rompevientos Red Bull" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Estilo minimalista y moderno "aesthetic" en color negro con capucha.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $140.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 14: Casco McLaren F1 -->
+    <div id="modal-casco-mclaren" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Casco McLaren F1</h4>
+            <img src="IMG/casco f1 mclaren.jpg" alt="Casco McLaren" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Réplica a escala de alta calidad con acabados detallados y visera oscura.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $220.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 15: Casco Mercedes AMG -->
+    <div id="modal-casco-mercedes" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Casco Mercedes AMG</h4>
+            <img src="IMG/casco f1 mercedes.avif" alt="Casco Mercedes" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Diseño aerodinámico característico del equipo Mercedes Petronas F1.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $220.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 16: Termo Scuderia Ferrari -->
+    <div id="modal-termo-ferrari" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Termo Scuderia Ferrari</h4>
+            <img src="IMG/tarro f1.avif" alt="Termo Ferrari" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Botella térmica deportiva en color rojo icónico con el escudo oficial.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $45.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- Modal 17: Taza Oficial F1 -->
+    <div id="modal-taza-f1" class="modal" style="background-color: #222; color: #fff;">
+        <div class="modal-content center-align">
+            <h4>Taza Oficial F1</h4>
+            <img src="IMG/vaso f1.avif" alt="Taza F1" style="max-width: 100%; height: 200px; object-fit: contain; margin: 15px 0;">
+            <p>Taza de cerámica negra brillante con el logotipo clásico de la Fórmula 1.</p>
+            <h5 style="color: #ff1801; font-weight: bold; margin-bottom: 20px;">Precio: $35.000 COP</h5>
+            <a href="registro.html" class="waves-effect waves-light btn red darken-4" style="margin-right: 10px;">Comprar</a>
+        </div>
+        <div class="modal-footer" style="background-color: #111;">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat" style="color: #fff;">Cerrar</a>
+        </div>
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar los modales
+            var modals = document.querySelectorAll('.modal');
+            M.Modal.init(modals);
+
+            // Inicializar el menú lateral (Sidenav)
+            var sidenavs = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenavs);
+        });
+    </script>
+
+</body>
+</html>
