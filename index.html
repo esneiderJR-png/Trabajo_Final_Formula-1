@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSE Oversize - Inicio</title>
+    <!-- Import Google Icon Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import Materialize CSS -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+    <!-- Tus estilos personalizados -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="black">
+
+    <!-- ================= BARRA DE NAVEGACIÓN ================= -->
+    <nav class="red darken-4">
+        <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">
+                <img src="Imagenes/Logo apex Line.jpeg" alt="Logo Apex Line">
+            </a>
+
+            <!-- Botón activador del menú lateral (Hamburguesa) - Solo visible en celulares y tablets -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
+
+            <!-- Menú de escritorio - Visible solo en PC -->
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="active"><a href="index.html">inicio</a></li>
+                <li><a href="nosotros.html">sobre nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="registro.html">registro</a></li>
+                <li><a href="contacto.html">contactanos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================= MENÚ LATERAL (SIDENAV) ================= -->
+    <ul id="slide-out" class="sidenav grey darken-4">
+        <li>
+            <div class="user-view">
+                <div class="background red darken-4"></div>
+                <a href="#user"><img class="circle" src="IMG/apex line.jpeg" alt="Logo"></a>
+                <a href="#name"><span class="white-text name">JSE Oversize</span></a>
+                <a href="#email"><span class="white-text email">contacto@jseoversize.com</span></a>
+            </div>
+        </li>
+        <li><a href="index.html" class="white-text"><i class="material-icons red-text">home</i>inicio</a></li>
+        <li><a href="nosotros.html" class="white-text"><i class="material-icons red-text">group</i>sobre nosotros</a></li>
+        <li><a href="productos.html" class="white-text"><i class="material-icons red-text">store</i>Productos</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader white-text">Cuenta y Contacto</a></li>
+        <li><a class="waves-effect white-text" href="registro.html"><i class="material-icons red-text">person_add</i>registro</a></li>
+        <li><a class="waves-effect white-text" href="contacto.html"><i class="material-icons red-text">mail</i>contactanos</a></li>
+    </ul>
+
+    <!-- Sección de Bienvenida / Hero Banner -->
+    <header class="hero-section">
+        <div class="container center-align">
+            <h1 class="hero-title">Bienvenidos a Apex & Line</h1>
+            <p class="hero-subtitle">Vive la pasión de la Fórmula 1 con estilo urbano, oversized y de máxima calidad.</p>
+            <div class="hero-buttons">
+                <a href="productos.html" class="waves-effect waves-light btn-large red darken-4">Ver Catálogo</a>
+                <a href="nosotros.html" class="waves-effect waves-light btn-large white black-text">Conócenos</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Destacada / Resumen -->
+    <section class="container seccion-destacada">
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card-panel grey darken-4 white-text center-align">
+                    <i class="material-icons large red-text text-darken-2">speed</i>
+                    <h5>Estilo Racing</h5>
+                    <p>Diseños inspirados en las escuderías más legendarias del automovilismo mundial.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel grey darken-4 white-text center-align">
+                    <i class="material-icons large red-text text-darken-2">checkroom</i>
+                    <h5>Corte Oversize</h5>
+                    <p>Comodidad absoluta y tendencia urbana con la horma perfecta para tu día a día.</p>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card-panel grey darken-4 white-text center-align">
+                    <i class="material-icons large red-text text-darken-2">local_shipping</i>
+                    <h5>Envíos Seguros</h5>
+                    <p>Llevamos la velocidad de la pista directo hasta la puerta de tu casa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript al final del body -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar el menú lateral (Sidenav)
+            var sidenavs = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenavs);
+        });
+    </script>
+</body>
+</html>
